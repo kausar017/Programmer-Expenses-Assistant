@@ -106,3 +106,17 @@ const calCulatbtn = document.getElementById('calculate');
         const assistantTab = document.getElementById('assistant-tab');
             assistantTab.classList.remove( 'bg-gradient-to-r', 'from-blue-500', 'to-purple-600', 'text-white');
      });
+
+
+// live validation for input
+
+document.getElementById("income").addEventListener('input',function () {
+    const inputValue = parseFloat(document.getElementById('income').value);
+    console.log(inputValue);
+    if(isNaN(inputValue) || inputValue <= 0) {
+        document.getElementById("income-error").classList.remove('hidden');
+        let inputValue = " ";
+        return;
+    }
+    
+})
