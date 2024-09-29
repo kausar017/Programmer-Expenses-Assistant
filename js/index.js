@@ -13,6 +13,18 @@ const calCulatbtn = document.getElementById('calculate');
     
         // console.table({incomeInput,softwareInput, coursesInput,internetInput});
         
+        if(incomeInput <= 0 || isNaN(incomeInput)) {
+          return alert('💰Invaled Income');
+        }
+        if(softwareInput <= 0 || isNaN(softwareInput)) {
+          return alert('💰Invaled Amoutn');
+        }
+        if(coursesInput <= 0 || isNaN(coursesInput)) {
+          return alert('💰Invaled Amoutn');
+        }
+        if(internetInput <= 0 || isNaN(internetInput)) {
+          return alert('💰Invaled Amoutn');
+        }
         const totalExpansess = softwareInput + coursesInput + internetInput;
         const balance = incomeInput - totalExpansess;
         // console.table(balance);
