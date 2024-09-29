@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Programmer Expenses</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      input[type="number"] {
+          -moz-appearance: textfield;
+      }
+      input[type="number"]::-webkit-outer-spin-button,
+      input[type="number"]::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+      }
+  </style>
   </head>
   <body>
     <div class="flex items-center justify-center min-h-screen bg-gray-100">
@@ -26,7 +36,7 @@
           </button>
           <button
             id="history-tab"
-            class="w-1/2 py-2 rounded-r-md focus:outline-none transition-colors duration-200 text-gray-600 font-semibold"
+            class="w-1/2 py-2 rounded-r-md focus:outline-none transition-colors duration-200 text-gray-600 font-semibold "
           >
             History
           </button>
